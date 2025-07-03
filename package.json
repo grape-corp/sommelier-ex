@@ -3,8 +3,9 @@
   "displayName": "sommelier-ex",
   "description": "provides support for .grape extension with JSON syntax highlighting",
   "keywords": ["json", "config", "grape", "highlighting", "syntax"],
-
-  "version": "0.0.1",
+  "publisher": "grape-corp",
+  "icon": "icon.png",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.101.0"
   },
