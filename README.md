@@ -1,4 +1,4 @@
-# sommelier README
+# sommelier
 
 Adds support to VSCode for JSON syntax highlighting of .grape files. Helps you taste the wine.
 
