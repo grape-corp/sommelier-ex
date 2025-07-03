@@ -2,12 +2,14 @@
   "name": "sommelier-ex",
   "displayName": "sommelier-ex",
   "description": "provides support for .grape extension with JSON syntax highlighting",
+  "keywords": ["json", "config", "grape", "highlighting", "syntax"],
+
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.101.0"
   },
   "categories": [
-    "Other"
+    "Formatters"
   ],
   "activationEvents": [],
   "main": "./extension.js",
@@ -44,5 +46,11 @@
     "eslint": "^9.25.1",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.5.2"
-  }
+  },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/grape-corp/sommelier-ex.git"
+  },
+  "license": "MIT"
+
 }
