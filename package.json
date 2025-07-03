@@ -1,0 +1,48 @@
+{
+  "name": "sommelier-ex",
+  "displayName": "sommelier-ex",
+  "description": "provides support for .grape extension with JSON syntax highlighting",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.101.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [{
+      "id": "grape",
+      "aliases": ["Grape", "grape"],
+      "extensions":[".grape"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [
+      {
+        "language": "grape",
+        "scopeName": "source.json",
+        "path": "syntaxes/json.tmLanguage.json"
+      }
+    ],
+    "jsonValidation": [
+      {
+        "fileMatch": ["*.grape"],
+        "url": "https://json.schemastore.org/package"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.101.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.25.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
